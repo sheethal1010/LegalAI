@@ -1,0 +1,6 @@
+-keep class com.legalai.app.models.** { *; }
+-keep class com.legalai.app.network.** { *; }
+-keepattributes Signature
+-keepattributes *Annotation*
+-dontwarn okhttp3.**
+-dontwarn retrofit2.**
