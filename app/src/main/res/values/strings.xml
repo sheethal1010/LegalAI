@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Legal.AI</string>
+    <string name="app_tagline">Your AI-Powered Legal Assistant</string>
+    <string name="btn_login">Sign In</string>
+    <string name="btn_signup">Create Account</string>
+    <string name="btn_send">Send</string>
+    <string name="hint_email">Email Address</string>
+    <string name="hint_password">Password</string>
+    <string name="hint_message">Describe your legal issue…</string>
+    <string name="disclaimer">AI-generated assistance. Final legal validation recommended.</string>
+    <string name="nav_lawyers">Lawyers</string>
+    <string name="nav_agents">AI Agents</string>
+    <string name="nav_cases">Cases</string>
+    <string name="nav_profile">Profile</string>
+</resources>

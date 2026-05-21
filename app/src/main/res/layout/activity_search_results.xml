@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:layout_width="match_parent" android:layout_height="match_parent" android:orientation="vertical" android:background="@color/light_bg_page">
+  <LinearLayout android:layout_width="match_parent" android:layout_height="64dp" android:background="@color/midnight_navy" android:gravity="center_vertical" android:orientation="horizontal" android:paddingStart="16dp" android:paddingEnd="16dp" android:elevation="4dp">
+    <ImageView android:id="@+id/iv_back" android:layout_width="40dp" android:layout_height="40dp" android:padding="8dp" android:src="@drawable/ic_back" android:contentDescription="Back" app:tint="@android:color/white"/>
+    <TextView android:id="@+id/tv_title" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:text="Search Results" android:textColor="@android:color/white" android:textSize="18sp" android:textStyle="bold" android:layout_marginStart="8dp"/>
+    <ImageView android:layout_width="24dp" android:layout_height="24dp" android:src="@drawable/ic_filter" app:tint="@color/counsel_gold"/>
+  </LinearLayout>
+  <androidx.recyclerview.widget.RecyclerView android:id="@+id/rv_results" android:layout_width="match_parent" android:layout_height="match_parent" android:clipToPadding="false" android:paddingStart="16dp" android:paddingEnd="16dp" android:paddingTop="8dp" android:paddingBottom="16dp"/>
+</LinearLayout>

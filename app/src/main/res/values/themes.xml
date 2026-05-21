@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="Theme.LegalAI" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <item name="colorPrimary">@color/midnight_navy</item>
+        <item name="colorPrimaryVariant">@color/midnight_navy</item>
+        <item name="colorOnPrimary">@android:color/white</item>
+        <item name="colorSecondary">@color/counsel_gold</item>
+        <item name="colorOnSecondary">@color/midnight_navy</item>
+        <item name="android:colorBackground">@color/light_bg_page</item>
+        <item name="android:windowBackground">@color/light_bg_page</item>
+        <item name="android:statusBarColor">@color/midnight_navy</item>
+        <item name="android:navigationBarColor">@color/midnight_navy</item>
+    </style>
+
+    <style name="Theme.LegalAI.Splash" parent="Theme.LegalAI">
+        <item name="android:windowBackground">@color/midnight_navy</item>
+        <item name="android:statusBarColor">@color/midnight_navy</item>
+    </style>
+
+    <!-- Card style -->
+    <style name="Widget.LegalAI.Card" parent="Widget.MaterialComponents.CardView">
+        <item name="cardCornerRadius">12dp</item>
+        <item name="cardElevation">2dp</item>
+        <item name="android:layout_marginBottom">12dp</item>
+    </style>
+
+    <!-- Primary filled button -->
+    <style name="Widget.LegalAI.Button.Primary" parent="Widget.MaterialComponents.Button">
+        <item name="backgroundTint">@color/midnight_navy</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="cornerRadius">8dp</item>
+    </style>
+
+    <!-- Gold button -->
+    <style name="Widget.LegalAI.Button.Gold" parent="Widget.MaterialComponents.Button">
+        <item name="backgroundTint">@color/counsel_gold</item>
+        <item name="android:textColor">@color/midnight_navy</item>
+        <item name="cornerRadius">8dp</item>
+    </style>
+
+    <!-- Ghost/outline button -->
+    <style name="Widget.LegalAI.Button.Ghost" parent="Widget.MaterialComponents.Button.OutlinedButton">
+        <item name="strokeColor">@color/midnight_navy</item>
+        <item name="android:textColor">@color/midnight_navy</item>
+        <item name="cornerRadius">8dp</item>
+    </style>
+
+    <!-- TextInputLayout -->
+    <style name="Widget.LegalAI.TextInputLayout" parent="Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+        <item name="boxStrokeColor">@color/midnight_navy</item>
+        <item name="hintTextColor">@color/light_text_muted</item>
+        <item name="boxCornerRadiusTopStart">8dp</item>
+        <item name="boxCornerRadiusTopEnd">8dp</item>
+        <item name="boxCornerRadiusBottomStart">8dp</item>
+        <item name="boxCornerRadiusBottomEnd">8dp</item>
+    </style>
+
+</resources>

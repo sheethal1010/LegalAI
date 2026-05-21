@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="card_corner_radius">12dp</dimen>
+    <dimen name="card_elevation">2dp</dimen>
+    <dimen name="screen_padding">20dp</dimen>
+    <dimen name="toolbar_height">64dp</dimen>
+    <dimen name="bottom_nav_height">60dp</dimen>
+    <dimen name="button_height">52dp</dimen>
+    <dimen name="avatar_size_lg">88dp</dimen>
+    <dimen name="avatar_size_md">56dp</dimen>
+    <dimen name="avatar_size_sm">40dp</dimen>
+</resources>

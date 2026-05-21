@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:layout_width="match_parent" android:layout_height="match_parent" android:background="@color/light_bg_page">
+  <LinearLayout android:id="@+id/header" android:layout_width="0dp" android:layout_height="wrap_content" android:background="@color/midnight_navy" android:orientation="vertical" android:paddingStart="20dp" android:paddingEnd="20dp" android:paddingTop="20dp" android:paddingBottom="24dp" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent">
+    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="My Cases" android:textColor="@android:color/white" android:textSize="24sp" android:textStyle="bold"/>
+    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Track your ongoing legal matters" android:textColor="@color/counsel_gold" android:textSize="13sp" android:layout_marginTop="4dp"/>
+  </LinearLayout>
+  <androidx.recyclerview.widget.RecyclerView android:id="@+id/rv_cases" android:layout_width="0dp" android:layout_height="0dp" android:clipToPadding="false" android:paddingStart="16dp" android:paddingEnd="16dp" android:paddingTop="8dp" android:paddingBottom="80dp" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@id/header"/>
+  <LinearLayout android:id="@+id/empty_state" android:layout_width="wrap_content" android:layout_height="wrap_content" android:gravity="center" android:orientation="vertical" android:visibility="gone" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@id/header">
+    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="⚖️" android:textSize="56sp"/>
+    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="No active cases" android:textColor="@color/light_text_heading" android:textSize="18sp" android:textStyle="bold" android:layout_marginTop="16dp"/>
+    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Start a chat to submit your first case." android:textColor="@color/light_text_muted" android:textSize="14sp" android:gravity="center" android:layout_marginTop="8dp"/>
+  </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

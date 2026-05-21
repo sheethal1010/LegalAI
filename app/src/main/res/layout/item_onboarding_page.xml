@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:paddingHorizontal="40dp"
+    android:paddingBottom="32dp">
+
+    <TextView
+        android:id="@+id/tv_ob_emoji"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="⚖️"
+        android:textSize="80sp" />
+
+    <TextView
+        android:id="@+id/tv_ob_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Title"
+        android:textColor="@android:color/white"
+        android:textSize="26sp"
+        android:fontFamily="sans-serif-condensed"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:layout_marginTop="28dp" />
+
+    <TextView
+        android:id="@+id/tv_ob_subtitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Subtitle"
+        android:textColor="#B0C4D8"
+        android:textSize="15sp"
+        android:gravity="center"
+        android:lineSpacingExtra="5dp"
+        android:layout_marginTop="16dp" />
+
+</LinearLayout>

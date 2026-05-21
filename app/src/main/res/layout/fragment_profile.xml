@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:layout_width="match_parent" android:layout_height="match_parent" android:background="@color/light_bg_page">
+  <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical" android:paddingBottom="100dp">
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:background="@color/midnight_navy" android:gravity="center" android:orientation="vertical" android:paddingTop="32dp" android:paddingBottom="32dp" android:paddingStart="24dp" android:paddingEnd="24dp">
+      <TextView android:id="@+id/tv_profile_initials" android:layout_width="88dp" android:layout_height="88dp" android:background="@drawable/bg_gold_rounded" android:gravity="center" android:text="U" android:textColor="@color/midnight_navy" android:textSize="30sp" android:textStyle="bold"/>
+      <TextView android:id="@+id/tv_profile_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Your Name" android:textColor="@android:color/white" android:textSize="20sp" android:textStyle="bold" android:layout_marginTop="14dp"/>
+      <TextView android:id="@+id/tv_profile_email" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="email@example.com" android:textColor="#99FFFFFF" android:textSize="13sp" android:layout_marginTop="4dp"/>
+    </LinearLayout>
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical" android:layout_marginTop="16dp" android:layout_marginStart="16dp" android:layout_marginEnd="16dp" android:background="@android:color/white" android:elevation="2dp">
+      <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="SETTINGS" android:textColor="@color/light_text_muted" android:textSize="11sp" android:textStyle="bold" android:paddingStart="20dp" android:paddingEnd="20dp" android:paddingTop="16dp" android:paddingBottom="8dp"/>
+      <LinearLayout android:layout_width="match_parent" android:layout_height="56dp" android:gravity="center_vertical" android:orientation="horizontal" android:paddingStart="20dp" android:paddingEnd="20dp">
+        <ImageView android:layout_width="22dp" android:layout_height="22dp" android:src="@drawable/ic_dark_mode" app:tint="@color/midnight_navy"/>
+        <TextView android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:text="Dark Mode" android:textColor="@color/light_text_heading" android:textSize="15sp" android:textStyle="bold" android:layout_marginStart="14dp"/>
+        <androidx.appcompat.widget.SwitchCompat android:id="@+id/switch_dark_mode" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+      </LinearLayout>
+    </LinearLayout>
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical" android:layout_marginTop="12dp" android:layout_marginStart="16dp" android:layout_marginEnd="16dp" android:background="@android:color/white" android:elevation="2dp">
+      <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="ACCOUNT" android:textColor="@color/light_text_muted" android:textSize="11sp" android:textStyle="bold" android:paddingStart="20dp" android:paddingEnd="20dp" android:paddingTop="16dp" android:paddingBottom="8dp"/>
+      <LinearLayout android:id="@+id/row_edit_profile" android:layout_width="match_parent" android:layout_height="56dp" android:gravity="center_vertical" android:orientation="horizontal" android:paddingStart="20dp" android:paddingEnd="20dp" android:background="?attr/selectableItemBackground" android:clickable="true" android:focusable="true">
+        <ImageView android:layout_width="22dp" android:layout_height="22dp" android:src="@drawable/ic_edit" app:tint="@color/midnight_navy"/>
+        <TextView android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:text="Edit Profile" android:textColor="@color/light_text_heading" android:textSize="15sp" android:textStyle="bold" android:layout_marginStart="14dp"/>
+        <ImageView android:layout_width="18dp" android:layout_height="18dp" android:src="@drawable/ic_chevron_right" app:tint="@color/light_text_muted"/>
+      </LinearLayout>
+      <LinearLayout android:id="@+id/row_saved_lawyers" android:layout_width="match_parent" android:layout_height="56dp" android:gravity="center_vertical" android:orientation="horizontal" android:paddingStart="20dp" android:paddingEnd="20dp" android:background="?attr/selectableItemBackground" android:clickable="true" android:focusable="true">
+        <ImageView android:layout_width="22dp" android:layout_height="22dp" android:src="@drawable/ic_bookmark_filled" app:tint="@color/midnight_navy"/>
+        <TextView android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:text="Saved Lawyers" android:textColor="@color/light_text_heading" android:textSize="15sp" android:textStyle="bold" android:layout_marginStart="14dp"/>
+        <ImageView android:layout_width="18dp" android:layout_height="18dp" android:src="@drawable/ic_chevron_right" app:tint="@color/light_text_muted"/>
+      </LinearLayout>
+      <LinearLayout android:id="@+id/row_notifications" android:layout_width="match_parent" android:layout_height="56dp" android:gravity="center_vertical" android:orientation="horizontal" android:paddingStart="20dp" android:paddingEnd="20dp" android:background="?attr/selectableItemBackground" android:clickable="true" android:focusable="true">
+        <ImageView android:layout_width="22dp" android:layout_height="22dp" android:src="@drawable/ic_notification" app:tint="@color/midnight_navy"/>
+        <TextView android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:text="Notifications" android:textColor="@color/light_text_heading" android:textSize="15sp" android:textStyle="bold" android:layout_marginStart="14dp"/>
+        <ImageView android:layout_width="18dp" android:layout_height="18dp" android:src="@drawable/ic_chevron_right" app:tint="@color/light_text_muted"/>
+      </LinearLayout>
+      <LinearLayout android:id="@+id/row_glossary" android:layout_width="match_parent" android:layout_height="56dp" android:gravity="center_vertical" android:orientation="horizontal" android:paddingStart="20dp" android:paddingEnd="20dp" android:background="?attr/selectableItemBackground" android:clickable="true" android:focusable="true">
+        <ImageView android:layout_width="22dp" android:layout_height="22dp" android:src="@drawable/ic_glossary" app:tint="@color/midnight_navy"/>
+        <TextView android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:text="Legal Glossary" android:textColor="@color/light_text_heading" android:textSize="15sp" android:textStyle="bold" android:layout_marginStart="14dp"/>
+        <ImageView android:layout_width="18dp" android:layout_height="18dp" android:src="@drawable/ic_chevron_right" app:tint="@color/light_text_muted"/>
+      </LinearLayout>
+    </LinearLayout>
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical" android:layout_marginTop="12dp" android:layout_marginStart="16dp" android:layout_marginEnd="16dp" android:background="@android:color/white" android:elevation="2dp">
+      <LinearLayout android:id="@+id/row_logout" android:layout_width="match_parent" android:layout_height="56dp" android:gravity="center_vertical" android:orientation="horizontal" android:paddingStart="20dp" android:paddingEnd="20dp" android:background="?attr/selectableItemBackground" android:clickable="true" android:focusable="true">
+        <ImageView android:layout_width="22dp" android:layout_height="22dp" android:src="@drawable/ic_logout" app:tint="#D32F2F"/>
+        <TextView android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:text="Log Out" android:textColor="#D32F2F" android:textSize="15sp" android:textStyle="bold" android:layout_marginStart="14dp"/>
+      </LinearLayout>
+    </LinearLayout>
+    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_gravity="center_horizontal" android:text="Legal.AI v1.0 • Powered by Gemini" android:textColor="@color/light_text_muted" android:textSize="11sp" android:layout_marginTop="20dp" android:gravity="center"/>
+  </LinearLayout>
+</androidx.core.widget.NestedScrollView>
